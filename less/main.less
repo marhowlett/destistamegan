@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Kirvy Regular';
+    src: url('Kirvy-Regular.woff2') format('woff2'),
+        url('Kirvy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kirvy Bold';
+    src: url('Kirvy-Bold.woff2') format('woff2'),
+        url('Kirvy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@import "vars";
+/*Ajuste de FullWidth*/
+
+.page-template {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+/*Esquema por defecto para las secciones*/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        width: 50%;
+    }
+    .col2 {
+        width: 33%;
+    }
+}
+
+/*Ajuste general*/
+
+h2 {
+    text-align: center;
+}
+
+.template-section {
+    &.padding-50 {
+        padding: 50px 0;
+    }
+
+    .contenedor {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col {
+        min-height: 500px;
+        padding: 60px;
+    }
+
+    h2 {
+        
+        color: @aqua;
+        font-family: 'Kirvy Bold';
+        font-size: 2.5em;
+        font-weight: normal;
+        line-height: 1.3em;
+        i {
+            font-family: 'Adobe Garamond Pro';
+            display: block;
+            font-size: 1.5em;
+        }
+
+        &.azul {
+            color: @aqua;
+        }
+
+    }
+
+    p,
+    ul {
+        font-size: 1.2em;
+        font-family: 'Avenir LT Std Medium';
+    }
+
+    ul {
+        li {
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            &::before {
+                content: "•";
+                color: @aquaoscura;
+                padding-right: 10px;
+                position: absolute;
+                left: -15px;
+            }
+        }
+
+        &.azul {
+            li {
+                &::before {
+                    color: @aqua;
+                }
+            }
+        }
+    }
+
+}
+
+#inicio_sl {
+    background: url(../img/slider.png) no-repeat center;
+    background-attachment: fixed;
+}
+
+#paquetes {
+    background: #f5f5f6;
+}
