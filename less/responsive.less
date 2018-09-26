@@ -1,20 +1,5 @@
 //main: main.less
 
-
-@media screen and (min-width: 1025px) {
-    /*Ajuste de logo al momento de hacer scroll*/
-    .whb-sticked .whb-general-header .woodmart-logo img {
-        transform: scale(1.6) translateY(11px);
-    }
-}
-
-/*@media screen and (orientation:portrait) {
-    
-}
-@media screen and (orientation:landscape) and (max) {
-    
-}*/
-
 @media screen and (max-width: 750px) {
     
     /*LOGO*/
@@ -40,6 +25,8 @@
         }
         .col2 {
             width: 100%;
+                padding-left: 0px; 
+            padding-right: 0px;
         }
         
         &.invertido{
@@ -59,179 +46,51 @@
             padding: 20px;
         }
     }
-    /* Home */
-    #tipo_acuario {
-       position: relative;
-        z-index: 100;
-        padding-top: 100px;
-        h2 {
-            text-align: center;
-            position: relative;
-            left: 50px;
-            margin-bottom: 50px;
-            i {
-                position: relative;
-                left: -50px;
-            }
-        }
-        
-        .caracteristicas1, .caracteristicas2 {
-            img {
-                right: 0px;
-                left: 0px;
-                position: relative;
-            }
-            h3 {
-                text-align: center;
-            }
 
-            p {
-                    text-align: justify;
-                margin-left: 0;
-                margin-right: 0;
-                left: 0;
-            }
-            
-        }
-    }
-    #contacto {
-        .datos {
-    margin-bottom: 10px;
-    margin-left: 30px;
-            }
-   .siguenos span {
-    padding-right: 10px;
-    margin-left: 30px;
-        }
-    }
-        
-        #acerca_de {
-            h2 {
-                position: relative;
-                padding-top: 40px;
-                left: -50px;
-                margin-bottom: 0px;
-                text-align: center;
-            }
-             p {
-                position: relative;
-                left: 0px;
-                padding-top: 30px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    
-
-/*********** QUIENES SOMOS */////////////
-
-#quienes_somos {
-
-img {
-    top: auto;
-    }
-    .col h2 {
-    text-align: center;
-}
-     p {
-    position: relative;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-    
-
-}
-
-   
-        .fondo {
-    min-height: 400px!important;
-    }
-    
-    .card {
-    width: auto;
-    }
-    
-
-#comprar-pagar {
-    .grid {
-           background-position: center 180px;
-       
-        .col {
-          margin-top: 10px;     
-
-            h2 {
-                text-align: center;
-            }
-            &:first-child {
-               
-                ul {
-                    max-width: 300px;
-                }
-            }
-
-            &:last-child {
-                    padding-left: 0px;
-    
-    /* padding-bottom: 0px; */
-            margin-top: 250px;
-                ul {
-                    strong {
-                        color: @azul;
-                        display: block;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-            
-        }
+#inicio_sl .comienzo {
+    margin-left: 0px; 
+    margin-right: 0px; 
+    a{
+            margin-right: 0px; 
     }
 }
-}
-
-
-//MEDIDAS  
-#pasos {
-h2 {
-    text-align: center; 
-        i {
-    position: relative;
-     left: 0px; 
-    }
-}
-}
-
-
-
-#como-pagar {
-    
-    h2 {
-        text-align: right;
-        position: relative;
-        left: 00px;
-        margin-bottom: 00px;
-        i {
-            position: relative;
-            left: 00px;
-        }
-    }
-
+    #doctora {
+        .caracteristicas1 {
+            .btn {
+                margin-right: 0px;
+            }
     img {
-        float: center;
-        position: relative;
-        right: 0px;
+    right: 0px;
     }
-
-    ul {
-        position: relative;
-        left: -50px;
-        margin-left: 50px;
-        li {
-            strong {
-                color: @azul;
-                display: block;
-                text-transform: uppercase;
-            }
+        p{
+            left: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+            text-align: justify;
         }
+        h3 {
+            margin-right: 0px; 
+        }
+        
+        
+    }
+    }
+    
+    #colaborador {
+    padding-bottom: 50px;
+    
+        .caracteristicas1 {
+    
+    img {
+    right: 0px; 
+    }
+        h2{
+                font-size: 2.5em;
+        }
+        h3 {
+            text-align: center;
+    font-size: 1.8em;
+        }
+    }
     }
 }

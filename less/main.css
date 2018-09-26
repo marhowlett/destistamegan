@@ -268,3 +268,71 @@ h2 {
 #contacto .siguenos img:hover {
   transform: translateY(-5px);
 }
+@media screen and (max-width: 750px) {
+  /*LOGO*/
+  .whb-scroll-stick .woodmart-logo img {
+    padding-top: 0;
+    transform: scale(2) translateY(15px);
+  }
+  canvas {
+    touch-action: auto !important;
+  }
+  .scene-nav {
+    display: none;
+  }
+  /*Esquema por defecto para las secciones*/
+  .grid .col {
+    width: 100%;
+  }
+  .grid .col2 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .grid.invertido {
+    flex-wrap: wrap-reverse;
+  }
+  .template-section a.btn {
+    margin: 0 auto;
+    display: block;
+  }
+  .template-section .col {
+    min-height: auto;
+    padding: 20px;
+  }
+  #inicio_sl .comienzo {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #inicio_sl .comienzo a {
+    margin-right: 0px;
+  }
+  #doctora .caracteristicas1 .btn {
+    margin-right: 0px;
+  }
+  #doctora .caracteristicas1 img {
+    right: 0px;
+  }
+  #doctora .caracteristicas1 p {
+    left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: justify;
+  }
+  #doctora .caracteristicas1 h3 {
+    margin-right: 0px;
+  }
+  #colaborador {
+    padding-bottom: 50px;
+  }
+  #colaborador .caracteristicas1 img {
+    right: 0px;
+  }
+  #colaborador .caracteristicas1 h2 {
+    font-size: 2.5em;
+  }
+  #colaborador .caracteristicas1 h3 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+}
