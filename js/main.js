@@ -1,124 +1,182 @@
-//smooth scroll
-jQuery(function ($) {
+var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;};}();function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        >>>>>>>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Wanna include in your project?
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        More documentation on github:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        https://github.com/cant89/gianni-accordion-js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        >>>>>>>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        **/
 
-    $('.box').on('click', function (e) {
-        e.preventDefault();
-        var perfil = $(this).data('perfil');
-        console.log(perfil)
-        $(perfil).addClass('active');
-        $('.shadow').addClass('active');
+var gianniAccordion = function () {
+  return function () {_createClass(_class, [{ key: 'transitionendEventName', value: function transitionendEventName()
 
-        $('.cerrar, .shadow').on('click', function (e) {
-            e.preventDefault();
-            $(perfil).removeClass('active');
-            $('.shadow').removeClass('active');
+      {
+        var i,
+        el = document.createElement('div'),
+        transitions = {
+          'transition': 'transitionend',
+          'OTransition': 'otransitionend',
+          'MozTransition': 'transitionend',
+          'WebkitTransition': 'webkitTransitionEnd' };
+
+
+        for (i in transitions) {
+          if (transitions.hasOwnProperty(i) && el.style[i] !== undefined) {
+            return transitions[i];
+          }
+        }
+      } }, { key: 'expand', value: function expand(
+
+      el) {
+        function resetHeight(ev) {var _this = this;
+          if (ev.target != el.content) return;
+          el.content.removeEventListener(this.transitionendevent, bindEvent);
+
+          if (!el.isOpen) return;
+
+          requestAnimationFrame(function () {
+            el.content.style.transition = '0';
+            el.content.style.height = 'auto';
+
+            requestAnimationFrame(function () {
+              el.content.style.height = null;
+              el.content.style.transition = null;
+
+              _this.fire("elementOpened", el);
+            });
+          });
+        }
+
+        var bindEvent = resetHeight.bind(this);
+        el.content.addEventListener(this.transitionendevent, bindEvent);
+
+        el.isOpen = true;
+        el.content.style.height = el.content.scrollHeight + "px";
+      } }, { key: 'collapse', value: function collapse(
+
+      el) {
+
+        function endTransition(ev) {
+          if (ev.target != el.content) return;
+          el.content.removeEventListener(this.transitionendevent, bindEvent);
+
+          if (el.isOpen) return;
+
+          this.fire("elementClosed", el);
+        }
+
+        var bindEvent = endTransition.bind(this);
+        el.content.addEventListener(this.transitionendevent, bindEvent);
+
+        el.isOpen = false;
+
+        requestAnimationFrame(function () {
+          el.content.style.transition = '0';
+          el.content.style.height = el.content.scrollHeight + "px";
+
+          requestAnimationFrame(function () {
+            el.content.style.transition = null;
+            el.content.style.height = 0;
+          });
         });
+      } }, { key: 'open', value: function open(
 
-        $(document).on('keyup', function (evt) {
-            if (evt.keyCode == 27) {
-                $(perfil).removeClass('active');
-                $('.shadow').removeClass('active');
-            }
+      el) {
+        el.selected = true;
+        this.fire("elementSelected", el);
+        this.expand(el);
+        el.wrapper.classList.add(this.selectedClass);
+      } }, { key: 'close', value: function close(
+
+      el) {
+        el.selected = false;
+        this.fire("elementUnselected", el);
+        this.collapse(el);
+        el.wrapper.classList.remove(this.selectedClass);
+      } }, { key: 'toggle', value: function toggle(
+
+      el) {var _this2 = this;
+        if (el.selected) {
+          this.close(el);
+        } else {
+          this.open(el);
+
+          if (this.oneAtATime) {
+            this.els.filter(function (e) {return e != el && e.selected;}).forEach(function (e) {
+              _this2.close(e);
+            });
+          }
+        }
+      } }, { key: 'attachEvents', value: function attachEvents()
+
+      {var _this3 = this;
+        this.els.forEach(function (el, i) {
+          el.trigger.addEventListener("click", _this3.toggle.bind(_this3, el));
         });
+      } }, { key: 'setDefaultData', value: function setDefaultData()
 
-    });
+      {
+        this.els = [];
+        this.events = {
+          'elementSelected': [],
+          'elementOpened': [],
+          'elementUnselected': [],
+          'elementClosed': [] };
 
-    
-    
-    // JavaScript
-window.sr = ScrollReveal({ reset: false });
+        this.transitionendevent = this.transitionendEventName();
+        this.oneAtATime = true;
+        this.selectedClass = "selected";
+        this.trigger = "[data-accordion-element-trigger]";
+        this.content = "[data-accordion-element-content]";
+      } }, { key: 'setCustomData', value: function setCustomData(
+
+      data) {
+        var keys = Object.keys(data);
+
+        for (var i = 0; i < keys.length; i++) {
+          this[keys[i]] = data[keys[i]];
+        }
+      } }, { key: 'fire', value: function fire(
+
+      eventName, el) {
+        var callbacks = this.events[eventName];
+        for (var i = 0; i < callbacks.length; i++) {
+          callbacks[i](el);
+        }
+      } }, { key: 'on', value: function on(
+
+      eventName, cb) {
+        if (!this.events[eventName]) return;
+        this.events[eventName].push(cb);
+      } }]);
+
+    function _class(data) {var _this4 = this;_classCallCheck(this, _class);
+      this.setDefaultData();
+      this.setCustomData(data); // ES6 => Object.assign(this, data)
+
+      [].forEach.call(document.querySelectorAll(this.elements), function (el, i) {
+        _this4.els.push({
+          wrapper: el,
+          trigger: el.querySelector(_this4.trigger),
+          content: el.querySelector(_this4.content) });
 
 
-      var hero = {
-        origin   : "top",
-        distance : "24px",
-        duration : 900,
-        scale    : 1.05,
-      }
-      
-      
-      var clientes = {
-        origin   : "top",
-        distance : "24px",
-        duration : 1200,
-        scale    : 1.05,
-        delay    : 900,
-      }
+        _this4.els[i].content.style.height = 0;
+      });
 
-      var intro = {
-        origin   : "bottom",
-        distance : "64px",
-        duration : 900,
-        delay    : 800,
-        scale    : 1,
-      }
+      this.attachEvents();
+    }return _class;}();
 
-      var resaltado = {
-        origin   : "left",
-        distance : "32px",
-        duration : 1200,
-        delay    : 400,
-        scale    : 0,
-      }
 
-      
-      var aplicaciones = {
-        origin   : "top",
-        distance : "24px",
-        duration : 1000,
-        scale    : 1.05,
-        delay    : 900
-      }
+}();
 
-      
-      var titulo = {
-        origin   : "bottom",
-        distance : "32px",
-        duration : 1000,
-        delay    : 0,
-        scale    : 0,
-      }
-      
-       var subtituloH3 = {
-        origin   : "bottom",
-        distance : "32px",
-        duration : 900,
-        delay    : 200,
-        scale    : 0,
-      }
-       
-       var subtituloH4 = {
-        origin   : "bottom",
-        distance : "32px",
-        duration : 900,
-        delay    : 300,
-        scale    : 0,
-      }
-      
-      var imagenes = {
-        origin   : "left",
-        distance : "32px",
-        duration : 800,
-        delay    : 400,
-        scale    : 0,
-      }
-      
-    var contenido = {
-        origin   : "bottom",
-        distance : "32px",
-        duration : 1000,
-        delay    : 400,
-        scale    : 0,
-      }
+var myAccordion = new gianniAccordion({
+  elements: ".card article" });
 
-             
-        //Animación en general
-        sr.reveal('h1, h2', titulo);
-        //sr.reveal('h3', subtituloH3);
-        //sr.reveal('h4', subtituloH4);
-        sr.reveal('.box img, #footer img', imagenes);
-        sr.reveal('p', contenido);
-        sr.reveal('.btn-green', contenido);
-    
-    
+
+myAccordion.on("elementSelected", function (data) {
+  console.log("elementOpened", data);
 });
