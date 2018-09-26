@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Kirvy Regular';
-    src: url('Kirvy-Regular.woff2') format('woff2'),
-        url('Kirvy-Regular.woff') format('woff');
+    src: url('fonts/Kirvy-Regular.woff2') format('woff2'),
+        url('fonts/Kirvy-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Kirvy Bold';
-    src: url('Kirvy-Bold.woff2') format('woff2'),
-        url('Kirvy-Bold.woff') format('woff');
+    src: url('fonts/Kirvy-Bold.woff2') format('woff2'),
+        url('fonts/Kirvy-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -37,6 +37,10 @@
     }
     .col2 {
         width: 33%;
+        padding-left: 90px;
+        padding-right: 90px;
+       
+        
     }
 }
 
@@ -66,11 +70,11 @@ h2 {
         
         color: @aqua;
         font-family: 'Kirvy Bold';
-        font-size: 2.5em;
+        font-size: 3.1em;
         font-weight: normal;
         line-height: 1.3em;
         i {
-            font-family: 'Adobe Garamond Pro';
+            font-family: 'Kirvy Bold';
             display: block;
             font-size: 1.5em;
         }
@@ -80,11 +84,15 @@ h2 {
         }
 
     }
+    h3 {
+        font-family: 'Kirvy Bold';
+        font-size: 2.0em;
+    }
 
     p,
     ul {
-        font-size: 1.2em;
-        font-family: 'Avenir LT Std Medium';
+        font-size: 1.4em;
+        font-family: 'Kirvy Bold';
     }
 
     ul {
@@ -109,29 +117,89 @@ h2 {
             }
         }
     }
+        a.btn {
+        transition: all 0.3s ease-in-out;
+
+        &.aqua {
+            font-family: 'Kirvy Bold';
+            background: #01b79e;
+            color: #fff;
+            font-size: 1.8em;
+            text-transform: none;
+            &:hover {
+                background: @aquaoscura;
+            }
+        }
+    }
 
 }
 
 #inicio_sl {
     background: url(../img/slider.png) no-repeat center;
     background-attachment: fixed;
+    .comienzo  {
+        padding-top: 80px;
+        margin-top: 95px;
+        margin-left: -190px;
+        margin-right: 350px;
+        text-align: center;
+        font-family: 'Kirvy Bold';
+        padding-bottom: 90px;
+        margin-bottom: 95px;
+    
+        
+    h3 {
+        color: @aquaoscura;
+       
+       
+    }
+    p {
+        color: @aqua;
+        margin-top: 30px;
+        margin-right: 60px;
+        b {
+            font-size: 1.3em;
+        }
+    }
+        a {
+            margin-right: 60px;
+        }
+    }
+    
 }
 
 #paquetes {
     background: #f5f5f6;
+    h2 {
+        color: @aquaoscura;
+    }
 }
 
 #servicios {
  background: url(../img/servicios.png) no-repeat center;
     background-attachment: fixed;
     text-align: center;
+    .grid {
+         margin-left: 30px;
+    margin-right: 30px;
+        padding-bottom: 100px;
+    }
     h2 {
-        margin-top: 100px;
+        padding-top: 100px;
+        color: white;
 
     }
-    p {
-        margin-top: 10px;
+    h3 {
+        color: white;
     }
+    p {
+        
+        margin-top: 10px;
+        color: white;
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
 }
 
 
@@ -140,15 +208,14 @@ h2 {
     z-index: 100;
     background-color: #f7f8f8;
     padding-top: 100px;
+    text-align: center;
     h2 {
-        text-align: center;
+        
         position: relative;
-        left: 50px;
+        font-size: 2.5em;
+    margin-right: -20px;
         margin-bottom: 50px;
-        i {
-            position: relative;
-            left: -50px;
-        }
+       
     }
     .caracteristicas1 {
         img {
@@ -162,36 +229,22 @@ h2 {
             left: -50px;
             margin-left: 50px;
             margin-right: 70px;
+            font-size: 1.0em;
+            color: #595a5a;
         }
         .btn {
             margin-top: 30px;
-            margin-left: 10px;
-        }
-        h3 {
-            color: @aquaoscura;
-        }
-    }
-    .caracteristicas2 {
-        img {
-            float: left;
-            position: relative;
-            left: -80px;
-        }
+            margin-right: 110px;
+            background-color: #f8de01;
+            color: @aquaoscura;  
 
-        p {
-            position: relative;
-            right: -50px;
-            margin-right: 50px;
-            margin-left: 70px;
-
-            text-align: right;
         }
-        .btn {
-            margin-top: 30px;
-            margin-left: 10px;
-        }
+          &:hover {
+                background: #f9ec7b;
+            }
         h3 {
-            text-align: right;
+                margin-right: 110px;
+            text-align: center;
             color: @aquaoscura;
         }
     }
@@ -209,12 +262,10 @@ h2 {
     h2 {
         text-align: center;
         position: relative;
-        left: 50px;
+        
         margin-bottom: 50px;
-        i {
-            position: relative;
-            left: -50px;
-        }
+        color: white;
+       
     }
     .caracteristicas1 {
         img {
@@ -223,43 +274,19 @@ h2 {
             right: -80px;
         }
 
-        p {
-            position: relative;
-            left: -50px;
-            margin-left: 50px;
-            margin-right: 70px;
+        ul {
+            color: white;
+            font-size: 1.0em;
         }
         .btn {
             margin-top: 30px;
             margin-left: 10px;
         }
+                  
         h3 {
-            color: @aquaoscura;
+            color: @aqua;
         }
-    }
-    .caracteristicas2 {
-        img {
-            float: left;
-            position: relative;
-            left: -80px;
-        }
-
-        p {
-            position: relative;
-            right: -50px;
-            margin-right: 50px;
-            margin-left: 70px;
-
-            text-align: right;
-        }
-        .btn {
-            margin-top: 30px;
-            margin-left: 10px;
-        }
-        h3 {
-            text-align: right;
-            color: @aquaoscura;
-        }
+        
     }
 
 
@@ -269,9 +296,12 @@ h2 {
 #contacto {
     background: url(../img/agenda_cita.png) no-repeat center;
     background-attachment: fixed;
-    color: #fff;
+    color: #004746;
     form label {
         color: black;
+    }
+    h2 {
+        color: #004746;
     }
     .title {
         p {
@@ -288,14 +318,19 @@ h2 {
     }
 
     .datos {
+        padding-top: 30px;
+        font-size: 1.5em;
         img {
+            
             margin-right: 10px;
         }
         .info {
+            margin-top: -20px;
+              margin-left: 90px;
             a {
                 display: block;
-                color: #fff;
-                margin-left: 10px;
+                color: @aquaoscura;
+               
 
             }
         }

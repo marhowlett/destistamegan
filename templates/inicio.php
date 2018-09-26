@@ -4,11 +4,12 @@
 ?>
 
   <section id="inicio_sl" class="template-section padding-50">
+       <div class="comienzo">
         <h2>Implante Dental</h2>
         <h3>¿Por qué esperar más?</h3>
-        <p>desde <span>$8,875.00</span> MXN</p>
-        <a href="#" class="btn">¡Me interesa!</a>
-        
+        <p>desde <b>$8,875.00</b> MXN</p>
+        <a href="#" class="btn aqua">¡Me interesa!</a>
+        </div>
     </section>
     <section id="paquetes" class="template-section padding-50">
         <div class="contenedor">
@@ -24,23 +25,24 @@ todas las áreas odontológicas</h3>
          <div class="grid">
          <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/005-teeth-1.png" alt="diagnostico">
          <h3>Diagnóstico y Prevención</h3>
-         <p>Una valoración integral y limpieza cada 6 meses ayuda a prevenir enfermedades en tu boca,  mantener tus encías y dientes sanos.
-<br>
-Consiste en una sola cita donde también te orientamos para que lleves un buen cuidado de tu boca en casa.</p>
+         <p>Una valoración integral y limpieza cada 6 meses ayuda a prevenir enfermedades en tu boca,  mantener tus encías y dientes sanos.</p>
+<p>Consiste en una sola cita donde también te orientamos para que lleves un buen cuidado de tu boca en casa.</p>
          </div>
          <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Copia de 001-dental.png" alt="">
          <h3>Implante Dental</h3>
           <p>Son la mejor opción para recuperar la función y estética de uno o varios dientes perdidos e incluso la dentadura completa. Existen diferentes implantes con tamaños y formas variadas que se adecúan a cada caso en particular.
-<br>
- Se requiere de una cita de diagnóstico previa para determinar la condición individual de cada paciente.</p></div>
+</p>
+<p>Se requiere de una cita de diagnóstico previa para determinar la condición individual de cada paciente.</p></div>
    
     <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/004-dentist.png" alt="">
          <h3>Odontología Restauradora
 </h3>
           <p>Existen diferentes opciones para recuperar la forma, función y estética de un diente lastimado o perdido. 
-<br>
+</p>
+<p>
 Desde opciones fijas y removibles como una resina o corona hasta una prótesis parcial o total removible (placa).
-<br>
+</p>
+<p>
 Con nuestra asesoría podrás elegir la que mejor se adapte a tu problema y estilo de vida.</p></div>
     </div>
     </div>
@@ -49,7 +51,8 @@ Con nuestra asesoría podrás elegir la que mejor se adapte a tu problema y esti
          <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/002-gum.png" alt="diagnostico">
          <h3>Periodoncia</h3>
          <p>UEn esta área nos enfocamos en la salud de tus encías y del tejido de soporte del diente (ligamento periodontal y hueso). 
-<br>
+</p>
+<p>
 Ayudando a prevenir y controlar a la enfermedad periodontal.</p>
          </div>
          <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Copia de 003-teeth.png" alt="">
@@ -79,18 +82,18 @@ Urgencias
                 <div class="col">
                  <h2 class="tipo">Dra. Megan González Soto</h2>
                   <p>Egresada de la Facultad de Odontología UNAM </p>
-                   <h3 class="diseño">Misión:</h3>
+                   <h3>Misión:</h3>
                     <p class="azul">
                        
                     Brindar un servicio dental integral personalizado y comprometido con el cuidado y prevención de la salud bucal para lograr la satisfacción y bienestar del paciente. 
-                        <h3 class="diseño">Visión:</h3>
+                        <h3>Visión:</h3>
                     <p class="azul">
                        
                     Fomentar la educación en cuanto a la prevención, mejorando así el nivel de salud bucal de cada uno de nuestros pacientes.
             
                         
                     </p>
-                    <a href="/acuarios-a-su-medida/" class="btn amarillo">¡Contactar!</a>
+                    <a href="#" class="btn aqua">¡Contactar!</a>
                 </div>
             </div>
         </div>
@@ -106,18 +109,21 @@ Urgencias
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/colaborador.png" alt="Doctora">
                 </div>
                 <div class="col">
-                 <h2 class="tipo">COLABORADORES</h2>
+                 <h2>COLABORADORES</h2>
                  
-                   <h3 class="diseño">Dr. Santiago H. Díaz Prieto</h3>
-                    <p class="azul">
-                       
-                       Egresado de la Facultad de Odontología UNAM.
-    Especialista en Periodoncia e Implantología en la
+                   <h3>Dr. Santiago H. Díaz Prieto</h3>
+                    <p>
+                       <ul>
+                           <li>
+                            Egresado de la Facultad de Odontología UNAM.
+                           </li>
+                           <li> Especialista en Periodoncia e Implantología en la
     División de Estudios de Posgrado e Investigación. 
-    UNAM.
-                    
-                    </p>
-                    <a href="/acuarios-a-su-medida/" class="btn amarillo">¡Contactar!</a>
+    UNAM.</li>
+                       </ul>
+
+   
+                
                 </div>
             </div>
         </div>

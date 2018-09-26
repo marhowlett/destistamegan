@@ -14,9 +14,7 @@ function woodmart_child_enqueue_styles() {
      wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('bootstrap'), $version );
     
  
-  
-    
-    wp_enqueue_script( 'main_js2', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0', true );
+ 
     
 
 }
