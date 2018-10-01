@@ -16,7 +16,67 @@
     <section id="paquetes" class="template-section padding-50">
         <div class="contenedor">
             <h2>PAQUETES</h2>
-            <?php echo do_shortcode(''); ?>
+             <div class="grid">
+                 <div class="col3">
+                     <div class="parte1">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paquete1.png" alt="paquete1">
+                    <h3>Paquete Prevención Infantil</h3>
+                    <h3>Incluye:</h3>
+                    <ul>
+                        <li>Valoración Integral.</li>
+                        <li>Limpieza.</li>
+                        <li>Aplicación de flúor.</li>
+                        <li>2 selladores de fosetas y fisuras. <br>
+ (prevención de caries).</li> 
+                    </ul>
+                    <p class="precio margen1">$640.00</p>
+                    </div>
+                    <div class="parte2 paquete1">
+                        <p>Únicamente para uso individual. <br>
+                         Pago en una sola exhibición.</p>
+                    </div>
+                    <div class="btn aqua">¡Me interesa!</div>
+                 </div>
+                 <div class="col3">
+                     <div class="parte1">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paquete2.png" alt="paquete2">
+                    <h3>Paquete Resinas</h3>
+                    <h3>Incluye:</h3>
+                    <ul>
+                        <li>Valoración.</li>
+                        <li>3 resinas.</li>
+                        <li>Eliminación de caries. </li>
+                        <li>Colocación y pulido de resina.</li> 
+                    </ul>
+                    <p class="precio margen2">$1,498.00</p>
+                    </div>
+                    <div class="parte2 paquete2">
+                        <p>Paquete válido durante 1 año (las resinas se pueden colocar en este lapso de tiempo). Únicamente para uso individual.
+Resinas de una sola superficie dental.
+ Pago en una sola exhibición.</p>
+                    </div>
+                    <div class="btn meinteresa">¡Me interesa!</div>
+                 </div>
+                 <div class="col3">
+                     <div class="parte1">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/paquete3.png" alt="paquete3">
+                    <h3>Paquete Blanqueamiento</h3>
+                    <h3>Incluye:</h3>
+                    <ul>
+                        <li>3 Limpiezas.</li>
+                        <li>1 blanqueamiento. </li>
+                    </ul>
+                    <p class="precio margen3">$2,688.00</p>
+                    </div>
+                    <div class="parte2 paquete3">
+                        <p>Paquete válido durante 1 año.
+Únicamente para uso individual.
+El blanqueamiento es una sola aplicación.
+ Pago en una sola exhibición. </p>
+                    </div>
+                    <div class="btn meinteresa aqua">¡Me interesa!</div>
+                 </div>
+             </div>
         </div>
     </section>
     <section>

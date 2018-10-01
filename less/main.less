@@ -25,7 +25,9 @@
 }
 
 
-
+.btn {
+    font-family: 'Kirvy';
+}
 
 /*Esquema por defecto para las secciones*/
 
@@ -39,8 +41,11 @@
         width: 33%;
         padding-left: 90px;
         padding-right: 90px;
-       
+  
         
+    }
+    .col3 {
+        width: 33%;
     }
 }
 
@@ -181,9 +186,111 @@ form {
 
 #paquetes {
     background: #f5f5f6;
+
+    .parte2{
+         background: url(../img/paquete_fondo.png);
+        p{
+        color: white!important;
+        
+        font-size: 0.8em;
+            margin-top: 10px;
+            
+        }
+        &.paquete1 {
+                   padding: 17px;
+            }
+        &.paquete2 {
+               padding: 1px;
+        }
+        &.paquete3 {
+              padding: 9px;
+            }
+    }
+    .col3 {
+        padding: 0 20px;
+    }
+    
+       position: relative;
+    z-index: 100;
+    background-color: #f7f8f8;
+    padding-top: 100px;
+    text-align: center;
     h2 {
+         color: @aquaoscura;
+        position: relative;
+        font-size: 2.5em;
+    margin-right: -20px;
+        margin-bottom: 50px;
+       
+    }
+    h3 {
         color: @aquaoscura;
     }
+   ul li::before {
+       content: none;
+    }
+    .parte1 {
+        background-color: white;
+        
+    }
+    
+    p {
+        color: @aquaoscura!important;
+            &.precio {
+                 font-size: 2.0em;
+                &.margen2 {
+                    margin-top: 72px;
+                }
+                &.margen3 {
+                    margin-top: 108px;
+                }
+            }
+    }
+            .btn {
+           margin-top: 30px;
+    padding: 20px;
+    font-size: 2.3em;
+   
+    background-color: #f8de01;
+    color: #227677;
+            
+
+        }
+   /* .caracteristicas1 {
+        img {
+            float: right;
+            position: relative;
+            right: -80px;
+        }
+
+        p {
+            position: relative;
+            left: -50px;
+            margin-left: 50px;
+            margin-right: 70px;
+            font-size: 1.0em;
+            color: @aquaoscura;
+            &.precio {
+                 font-size: 2.0em;
+            }
+        }
+        .btn {
+            margin-top: 30px;
+            margin-right: 110px;
+            background-color: #f8de01;
+            color: @aquaoscura;
+            
+
+        }
+
+        h3 {
+                margin-right: 110px;
+            text-align: center;
+            color: @aquaoscura;
+        }
+    }*/
+
+
 }
 
 #servicios {
