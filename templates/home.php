@@ -3,12 +3,15 @@
     get_header("home");
 ?>
   <section id="inicio_sl" class="template-section padding-50">
+       <?php echo do_shortcode( '[rev_slider alias="slider_megan"]' ); ?>
+      <!--
        <div class="comienzo">
         <h2>Implante Dental</h2>
         <h3>¿Por qué esperar más?</h3>
         <p>desde <b>$8,875.00</b> MXN</p>
         <a href="#" class="btn aqua">¡Me interesa!</a>
         </div>
+        -->
     </section>
     <section id="paquetes" class="template-section padding-50">
         <div class="contenedor">
@@ -49,7 +52,7 @@ Con nuestra asesoría podrás elegir la que mejor se adapte a tu problema y esti
          <div class="grid">
          <div  class="col2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/002-gum.png" alt="diagnostico">
          <h3>Periodoncia</h3>
-         <p>UEn esta área nos enfocamos en la salud de tus encías y del tejido de soporte del diente (ligamento periodontal y hueso). 
+         <p>En esta área nos enfocamos en la salud de tus encías y del tejido de soporte del diente (ligamento periodontal y hueso). 
 </p>
 <p>
 Ayudando a prevenir y controlar a la enfermedad periodontal.</p>
