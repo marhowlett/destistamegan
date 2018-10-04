@@ -224,6 +224,8 @@ Col. Pedregal de Carrasco. <br>Coyoacán, C.P. 04700 CDMX.
             </div>
         </div>
     </section>
+    
+    
 <?php 
     get_footer();
 ?>

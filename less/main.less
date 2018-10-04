@@ -29,6 +29,8 @@
     font-family: 'Kirvy';
 }
 
+
+
 /*Esquema por defecto para las secciones*/
 
 .grid {
@@ -179,6 +181,7 @@ form {
     }
         a {
             margin-right: 60px;
+            font-size: 10px;
         }
     }
     
@@ -411,7 +414,7 @@ form {
 
 
 #contacto {
-    background: url(../img/agenda_cita.png) no-repeat center;
+    background: url(../img/agenda_cita.png) repeat center;
     background-attachment: fixed;
     color: #004746;
     form label {
@@ -473,4 +476,34 @@ form {
 
 }
 
+footer {
+    .col {
+        margin-top: 30px;
+    }
+    h2 {
+        color: #004746;
+        font-family: 'Kirvy Bold';
+        font-size: 2.1em;
+            position: relative;
+    margin: 0 auto;
+    left: -180px;
+    margin-top: 30px;
+    }
+    img {
+        margin-left: 10px;
+        &.logo {
+         float: right;
+            position: relative;
+               right: 180px;
+        }
+    }
+    p {
+            background-color: #00b1a2;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+        margin-bottom: -1px;
+
+    }
+}
 @import "responsive";

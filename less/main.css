@@ -134,6 +134,7 @@ form {
 }
 #inicio_sl .comienzo a {
   margin-right: 60px;
+  font-size: 10px;
 }
 #paquetes {
   background: #f5f5f6;
@@ -321,7 +322,7 @@ form {
   color: #009c92;
 }
 #contacto {
-  background: url(../img/agenda_cita.png) no-repeat center;
+  background: url(../img/agenda_cita.png) repeat center;
   background-attachment: fixed;
   color: #004746;
 }
@@ -371,6 +372,38 @@ form {
 #contacto .siguenos img:hover {
   transform: translateY(-5px);
 }
+footer .col {
+  margin-top: 30px;
+}
+footer h2 {
+  color: #004746;
+  font-family: 'Kirvy Bold';
+  font-size: 2.1em;
+  position: relative;
+  margin: 0 auto;
+  left: -180px;
+  margin-top: 30px;
+}
+footer img {
+  margin-left: 10px;
+}
+footer img.logo {
+  float: right;
+  position: relative;
+  right: 180px;
+}
+footer p {
+  background-color: #00b1a2;
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: -1px;
+}
+@media (max-width: 768px) {
+  .offcanvas-sidebar-mobile .woodmart-sticky-sidebar-opener {
+    display: none;
+  }
+}
 @media screen and (max-width: 750px) {
   /*LOGO*/
   .whb-scroll-stick .woodmart-logo img {
@@ -402,6 +435,16 @@ form {
   .template-section .col {
     min-height: auto;
     padding: 20px;
+  }
+  .template-section .col3 {
+    width: 100%;
+  }
+  #paquetes .btn {
+    margin-bottom: 40px;
+  }
+  #paquetes p.precio.margen2,
+  #paquetes p.precio.margen3 {
+    margin-top: 0px;
   }
   #inicio_sl .comienzo {
     margin-left: 0px;
@@ -440,5 +483,11 @@ form {
   #colaborador .caracteristicas1 h3 {
     text-align: center;
     font-size: 1.8em;
+  }
+  footer h2 {
+    left: 0;
+  }
+  footer img.logo {
+    right: 60px;
   }
 }
