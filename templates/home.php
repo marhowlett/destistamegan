@@ -2,7 +2,7 @@
     /* Template Name: Inicio */ 
     get_header("home");
 ?>
-  <section id="inicio_sl" class="template-section padding-50">
+  <section id="inicio_sl" class="template-section">
        <?php echo do_shortcode( '[rev_slider alias="slider_megan"]' ); ?>
       <!--
        <div class="comienzo">

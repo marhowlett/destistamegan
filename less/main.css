@@ -393,6 +393,7 @@ footer img.logo {
   right: 180px;
 }
 footer p {
+  padding: 10px 0;
   background-color: #00b1a2;
   color: black;
   margin-top: 20px;
