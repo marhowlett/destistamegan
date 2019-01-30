@@ -1,6 +1,6 @@
 <?php
     /* Template Name: Inicio */ 
-    get_header("home");
+    get_header();
 ?>
   <section id="inicio_sl" class="template-section">
        <?php echo do_shortcode( '[rev_slider alias="slider_megan"]' ); ?>
