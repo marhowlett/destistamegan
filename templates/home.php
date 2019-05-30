@@ -35,7 +35,7 @@
                         <p>Únicamente para uso individual. <br>
                          Pago en una sola exhibición.</p>
                     </div>
-                    <div class="btn aqua">¡Me interesa!</div>
+                     <a href="https://dentistamegan.mx/#contacto" class="btn meinteresa">¡Me interesa!</a>
                  </div>
                  <div class="col3">
                      <div class="parte1">
@@ -55,7 +55,8 @@
 Resinas de una sola superficie dental.
  Pago en una sola exhibición.</p>
                     </div>
-                    <div class="btn meinteresa">¡Me interesa!</div>
+                    <a href="https://dentistamegan.mx/#contacto" class="btn meinteresa">¡Me interesa!</a>
+                   
                  </div>
                  <div class="col3">
                      <div class="parte1">
@@ -74,7 +75,7 @@ Resinas de una sola superficie dental.
 El blanqueamiento es una sola aplicación.
  Pago en una sola exhibición. </p>
                     </div>
-                    <div class="btn meinteresa aqua">¡Me interesa!</div>
+                     <a href="https://dentistamegan.mx/#contacto" class="btn meinteresa">¡Me interesa!</a>
                  </div>
              </div>
         </div>
@@ -155,7 +156,7 @@ Urgencias
             
                         
                     </p>
-                    <a href="#" class="btn aqua">¡Contactar!</a>
+                    <a href="https://dentistamegan.mx/#contacto" class="btn aqua">¡Contactar!</a>
                 </div>
             </div>
         </div>
