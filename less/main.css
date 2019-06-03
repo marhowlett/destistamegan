@@ -372,6 +372,12 @@ form {
 #contacto .siguenos img:hover {
   transform: translateY(-5px);
 }
+#galeria {
+  padding: 100px 0;
+}
+#galeria h2 {
+  color: #004746;
+}
 footer .col {
   margin-top: 30px;
 }
