@@ -417,10 +417,13 @@ form {
     background: url(../img/agenda_cita.png) repeat center;
     background-attachment: fixed;
     color: #004746;
-    form label {
+    div.wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%!important;
+}
+    label.wpforms-field-label, input.wpforms-field-medium, textarea.wpforms-field-medium, input.wpforms-field-medium::placeholder, textarea.wpforms-field-medium::placeholder{
             text-transform: uppercase;
      color: @aquaoscura;
-    font-size: 1.3em!important;
+    
         
     }
     h2 {
@@ -473,9 +476,19 @@ form {
             }
         }
     }
+     .btn {
+         
+            background-color: #f8de01;
+            color: @aquaoscura;
+            font-family: 'Kirvy Bold';
+    font-size: 1.8em;
+    text-transform: none;
+
+        }
+
 
 }
-#galeria {
+#galeria, #testimonios {
     padding: 100px 0;
     h2 {
         color: #004746;

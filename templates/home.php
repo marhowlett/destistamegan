@@ -213,9 +213,20 @@
 </section>
 
 <section id="galeria" class="template-section">
+   <div class="contenedor">
     <h2>GALERÍA</h2>
     <?php echo do_shortcode( '[elfsight_instagram_feed id="1"]' ); ?>
+    </div>
 
+</section>
+<section id="testimonios" class="template-section">
+   <div class="contenedor">
+    <h2>TESTIMONIOS</h2>
+    <?php echo do_shortcode( '[testimonials spacing="30" woodmart_css_id="62daf04ccf1b0" slides_per_view="3" autoplay="no" hide_pagination_control="no" hide_prev_next_buttons="no" center_mode="no" wrap="no" stars_rating="no"][testimonial name="Daniel Nava"]Excelente atención, muy responsable, puntual y conocimiento de lo que hace. Brinda confianza y seguridad[/testimonial][testimonial name="Beatriz M"]Excelente atención, me ayudó en lo posible a que estuviera cómoda sin dolor, el trabajo muy bien y el consultorio muy limpio, da mucha confianza la atención y los precios son accesibles. Muy recomendable[/testimonial][testimonial name="Anaili8691"]Excelente trato, muy nueva atención y muy buen trabajo.
+La revisión fue buena y el diagnostico acertado[/testimonial][testimonial name="roxanna_nef"]Excelente trato, muy puntual y precio accesible, la recomiendo ampliamente.
+Muy buena doctora, se preocupa por sus pacientes.[/testimonial][testimonial name="merika.lucero"]La atención es muy buena en especial para los pacientes pequeños, nos explica el tratamiento a seguir[/testimonial][testimonial name="Amy"]Muy buen servicio. Tuve un blanqueamiento y salí muy satisfecha con el resultado. Muchas gracias!!!![/testimonial][testimonial name="Luis A H Glez"]He ido en varias ocasiones ya, debo decir que siempre hay un trato amable e interés por el seguimiento del paciente. El precio es accesible, el trabajo excelente, rápido, sin malestar y siempre disponibilidad en horario.[/testimonial][testimonial name="eparra"]Muy profesional en su trabajo, excelente atención y seguimiento a tratamiento. La recomiendo totalmente.[/testimonial][testimonial name="Karla Arau"]Excelente servicio y buen trato de la doctora.
+Además de ser super puntual y paciente con las recomendaciones y explicaciones.[/testimonial][testimonial name="ivafut"]Fui con la Dra. Megan para que me cambiara dos resinas que me puso otro dentista y se cayeron. Su trato fue cordial muy amable y con paciencia pues a mí me pone nerviosa ir al dentista. Sus costos son accesibles al igual que su consultorio está ubicado en zona fácil de llegar. Salí muy contenta con mis nuevas resinas. Y voy a regresar para extracción de una muela, limpieza dental y algunos implantes. Estoy satisfecha con el trabajo y la atención.[/testimonial][/testimonials]' ); ?>
+    </div>
 </section>
 
 <section id="contacto" class="template-section padding-50">
