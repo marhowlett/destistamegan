@@ -211,14 +211,15 @@
         </div>
     </div>
 </section>
-
+<!--
 <section id="galeria" class="template-section">
    <div class="contenedor">
     <h2>GALERÍA</h2>
-    <?php echo do_shortcode( '[elfsight_instagram_feed id="1"]' ); ?>
+    <?php //echo do_shortcode( '[elfsight_instagram_feed id="1"]' ); ?>
     </div>
 
 </section>
+-->
 <section id="testimonios" class="template-section">
    <div class="contenedor">
     <h2>TESTIMONIOS</h2>
